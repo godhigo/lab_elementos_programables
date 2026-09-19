@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Laboratorio de Elementos Programables I",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 16, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnA",
+      "top": -35,
+      "left": 230,
+      "attrs": { "color": "green", "label": "A" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnB",
+      "top": 35,
+      "left": 230,
+      "attrs": { "color": "blue", "label": "B" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRed",
+      "top": 140,
+      "left": 240,
+      "attrs": { "color": "red", "label": "LOCKED" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledYellow",
+      "top": 190,
+      "left": 240,
+      "attrs": { "color": "yellow", "label": "WAIT" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledGreen",
+      "top": 240,
+      "left": 240,
+      "attrs": { "color": "green", "label": "ACCESS" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRed",
+      "top": 147,
+      "left": 165,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rYellow",
+      "top": 197,
+      "left": 165,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rGreen",
+      "top": 247,
+      "left": 165,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP16", "btnA:1.l", "green", [ "h148.8", "v-233.15" ] ],
+    [ "btnA:2.l", "pico:GND.3", "black", [ "h-249.2", "v146.95" ] ],
+    [ "pico:GP17", "btnB:1.l", "blue", [] ],
+    [ "btnB:2.l", "pico:GND.3", "black", [ "h-18.8", "v-67", "h-230.4", "v143.95" ] ],
+    [ "pico:GP13", "rRed:1", "red", [ "h138", "v-29.7" ] ],
+    [ "rRed:2", "ledRed:A", "red", [] ],
+    [ "ledRed:C", "pico:GND.3", "black", [ "v10", "h-274.2", "v-48.05" ] ],
+    [ "pico:GP14", "rYellow:1", "orange", [ "v0.05", "h159" ] ],
+    [ "rYellow:2", "ledYellow:A", "orange", [] ],
+    [ "ledYellow:C", "pico:GND.3", "black", [ "h-274.2", "v-88.05" ] ],
+    [ "pico:GP15", "rGreen:1", "green", [ "v9.65", "h159" ] ],
+    [ "rGreen:2", "ledGreen:A", "green", [] ],
+    [ "ledGreen:C", "pico:GND.3", "black", [ "h-274.2", "v-138.05" ] ]
+  ],
+  "dependencies": {}
+}
