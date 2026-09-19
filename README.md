@@ -17,6 +17,8 @@ lab_elementos_programables/
 │
 ├── Sesion_04_Interrupciones_Temporizadores/
 │
+├── examen_01
+│
 └── README.md
 ```
 
@@ -29,7 +31,7 @@ lab_elementos_programables/
 | [Sesión 02](./Sesion_02_Conceptos_Basicos_MCU/)         | Conceptos básicos de MCU        | Introducción al manejo de microcontroladores y GPIO          |
 | [Sesión 03](./Sesion_03_Pullup_Pulldown/)               | Pull-Up / Pull-Down             | Entradas digitales, botones y resistencias Pull-Up/Pull-Down |
 | [Sesión 04](./Sesion_04_Interrupciones_Temporizadores/) | Interrupciones y temporizadores | Manejo de interrupciones, temporizadores y eventos           |
-
+| [Examen 01](./examen_01/) | Examen 1 | Evaluación primer parcial | 
 ---
 
 ## Objetivo
