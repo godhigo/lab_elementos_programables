@@ -32,6 +32,7 @@ lab_elementos_programables/
 | [Sesión 03](./Sesion_03_Pullup_Pulldown/)               | Pull-Up / Pull-Down             | Entradas digitales, botones y resistencias Pull-Up/Pull-Down |
 | [Sesión 04](./Sesion_04_Interrupciones_Temporizadores/) | Interrupciones y temporizadores | Manejo de interrupciones, temporizadores y eventos           |
 | [Examen 01](./examen_01/) | Examen 1 | Evaluación primer parcial | 
+| [Sesión 05](./Sesion_06_PWM_Motor_DC/) | PMW y Puente H | Control de un Motor DC |
 ---
 
 ## Objetivo
