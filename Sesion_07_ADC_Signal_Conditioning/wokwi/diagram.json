@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": -80,
+      "left": 250,
+      "attrs": {
+        "value": "50"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": 40,
+      "left": 220,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yellow",
+      "top": 40,
+      "left": 270,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": 40,
+      "left": 320,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 100,
+      "left": 210,
+      "rotate": 90,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 100,
+      "left": 260,
+      "rotate": 90,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 100,
+      "left": 310,
+      "rotate": 90,
+      "attrs": {
+        "value": "330"
+      }
+    }
+  ],
+  "connections": [
+    [ "pico:3V3", "pot:VCC", "red", [] ],
+    [ "pico:GND.1", "pot:GND", "black", [] ],
+    [ "pico:GP26", "pot:SIG", "purple", [] ],
+    
+    [ "pico:GP13", "led_green:A", "green", [] ],
+    [ "led_green:C", "r1:1", "green", [] ],
+    [ "r1:2", "pico:GND.2", "black", [] ],
+    
+    [ "pico:GP14", "led_yellow:A", "yellow", [] ],
+    [ "led_yellow:C", "r2:1", "yellow", [] ],
+    [ "r2:2", "pico:GND.3", "black", [] ],
+    
+    [ "pico:GP15", "led_red:A", "red", [] ],
+    [ "led_red:C", "r3:1", "red", [] ],
+    [ "r3:2", "pico:GND.4", "black", [] ]
+  ]
+}

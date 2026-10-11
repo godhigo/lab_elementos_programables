@@ -1,3 +1,0 @@
-mpremote==1.29.0
-platformdirs==4.11.9
-pyserial==3.5

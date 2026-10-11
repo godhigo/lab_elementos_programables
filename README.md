@@ -1,5 +1,7 @@
 # Laboratorio de Elementos Programables
 
+## Diego Navarro Sánchez
+
 Repositorio utilizado para almacenar las prácticas, ejercicios y proyectos realizados durante la materia de **Laboratorio de Elementos Programables**.
 
 El repositorio está organizado por sesiones. Cada carpeta contiene el código y los archivos utilizados durante la práctica correspondiente.
@@ -19,6 +21,10 @@ lab_elementos_programables/
 │
 ├── examen_01
 │
+├── Sesion_06_PWM_Motor_DC/
+│
+├── Sesion_07_ADC_Signal_Conditioning/
+│
 └── README.md
 ```
 
@@ -32,7 +38,8 @@ lab_elementos_programables/
 | [Sesión 03](./Sesion_03_Pullup_Pulldown/)               | Pull-Up / Pull-Down             | Entradas digitales, botones y resistencias Pull-Up/Pull-Down |
 | [Sesión 04](./Sesion_04_Interrupciones_Temporizadores/) | Interrupciones y temporizadores | Manejo de interrupciones, temporizadores y eventos           |
 | [Examen 01](./examen_01/) | Examen 1 | Evaluación primer parcial | 
-| [Sesión 05](./Sesion_06_PWM_Motor_DC/) | PMW y Puente H | Control de un Motor DC |
+| [Sesión 06](./Sesion_06_PWM_Motor_DC/) | PMW y Puente H | Control de un Motor DC |
+| [Sesión 07] (./Sesion_07_ADC_Signal_Conditioning/) | Acondicionamiento de Señal | Acondicionamineto de Señal + ADC
 ---
 
 ## Objetivo
